@@ -2,12 +2,11 @@
     "name": "Windows Dev with VNC",
     "dockerfile": "Dockerfile",
 
-    // Enable port forwarding from the remote container to your Codespaces instance
-    "forwardPorts": [5901],  
+    // Forward both VNC and noVNC ports
+    "forwardPorts": [5901, 8080],
 
-    // Install a VNC viewer extension for convenience in VS Code (optional)
+    // You might want an extension to open web URLs easily within Codespaces
     "extensions": [
-        "dbaeumer.vscode-remote-vnc"
+        "ms-vscode.vscode-github-browser-extension" 
     ]
 }
-
